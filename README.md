@@ -1,4 +1,4 @@
-# e-juice_landing
+# E-JUICE - Landing page
 
 landing page prototype
 
