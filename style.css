@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    cursor: url('./dot.png'), auto;
+    background-color: #376E8B;
+    background-image: url('./IMG_2817.JPG');
+    background-size: 35%, 100vh;
+    background-repeat: no-repeat;
+    background-position: left top, right;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 1rem;
+    font-size: 26px;
+}
+
+.nav-links, h1 {
+    flex: .3;
+}
+
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #376E8B;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all .3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+    backdrop-filter: grayscale();
+}
+
+.link-grow {
+    transform: scale(2);
+    background: #fff;
+}
+
+.hovered-link {
+    color: #000;
+    transition: all .3s ease;
+}
+
+.front-desc {
+    width: 1200px;
+    height: 600px;
+	
+	position:absolute;
+    left:35em; right:0;
+    top:25em; bottom:0;
+	margin:auto;
+	
+	max-width:100%;
+	max-height:100%;
+	overflow:auto;
+}
+
+.front-desc h1 {
+    font-size: 80px;
+}
+
+.quote {
+    background-color: #fff;
+    padding: 105px 55px;
+    margin-top: 60px;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+
+.quote p {
+    color: #000;
+    font-size: 26px;
+}
+
+.quote span {
+    font-weight: bold;
+}
+
+.cta {
+    background-color: #376E8B;
+    padding: 20px 23px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin: 10px;
+}
+
+.line {
+    background-color: #376E8B;
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 10px;
+}
